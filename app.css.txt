@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.left-panel {
+  width: 30%;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 20px;
+}
+
+.customer-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.customer-item:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #ddd;
+}
+
+
+.right-panel h2 {
+  margin-bottom: 10px;
+}
+.right-panel-2{
+  margin-left: 150px;
+  padding-right: 150px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 5px; /* Adjust the gap between images */
+}
+
+.grid-image {
+  width: 650px; /* Increase the width of images */
+  height: 350px; /* Increase the height of images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
